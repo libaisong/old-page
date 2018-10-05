@@ -1,15 +1,127 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
-<meta charset="utf-8">
+<head>		
 <title>李柏松的个人网页</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>  	
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+<!----//End-top-nav-script---->
 </head>
 <body>
- 
-<h1>李柏松的个人网页</h1>
-<hr>
-<p>创建中，敬请期待</p>
-<!这是一条注释>
-<font size="1">李柏松制作</font>
+	<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+							<!----start-top-nav---->
+							 <nav class="top-nav">
+								<ul class="top-nav">
+									<li class="active"><a href="#home" class="scroll">主页 </a></li>
+									<li><a href="#services" class="scroll">个人介绍</a></li>
+								</ul>
+								<a href="#" id="pull"><img src="images/menu-icon.png" title="menu" /></a>
+							</nav>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="tittle-head">
+				        		<h1>欢迎来到李柏松的个人网页</h1>
+				          		<p>我是李柏松，是一名工程师，现致力于电机控制算法的研发，对异步电机、永磁同步电机、同步磁阻电机等均有研究 </p>
+				          		<div class="clear"> </div>
+				          	</div>
+				</div>
+			</div>
+		<!----- //End-header---->
+		<!----- /start-services---->
+			 <div id="services" class="Services">
+	 			<div class="container">
+		 			<div class="service-grides">
+			 			<div id="box">
+						<div class="col-md-4 service-grid">
+			 				<div class="col-md-3 service-img">
+			 					<img src="images/s-1.png" alt="">
+			 				</div>
+			 				<div class="col-md-9 service-text ">
+			 					<h3>个人简介</h3>
+			 					<p>敬请期待</p>
+			 					<a href="#">Learn More</a>
+			 				</div>
+			 					<div class="clearfix"> </div>
+			 			</div>
+		 				<div class="col-md-4 service-grid">
+			 				<div class="col-md-3 service-img">
+			 					<img src="images/s-2.png" alt="">
+			 				</div>
+			 				<div class="col-md-9 service-text ">
+			 					<h3>工作业绩</h3>
+			 					<p>敬请期待</p>
+			 					<a href="#">Learn More</a>
+			 				</div>
+			 					<div class="clearfix"> </div>
+			 			</div>
+			 			<div class="col-md-4 service-grid">
+			 				<div class="col-md-3 service-img">
+			 					<img src="images/s-3.png" alt="">
+			 				</div>
+			 				<div class="col-md-9 service-text ">
+			 					<h3>研究方向</h3>
+			 					<p>敬请期待</p>
+			 					<a href="#">Learn More</a>
+			 				</div>
+			 					<div class="clearfix"> </div>
+			 			</div>
+		 				<div class="clear"> </div>
+		 			</div>
+	 			</div>
+			 </div>
+			 <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+		 
+	</div>
+    	<div class="clear"></div>
+    </div> 
+	    <!---start-script-gallery--->
+   		  <link rel="stylesheet" href="css/grid-slider.css" type="text/css" media="screen" />
+	    <script type="text/javascript" src="js/jquery.grid-slider.min.js"></script>
+	    <script type="text/javascript" src="js/jquery.wt-lightbox.min.js"></script>    
+	    <script type="text/javascript" src="js/demo.js"></script>
+	<!---//End-script-gallery--->
+	<!------------/start-hear-me---------->
+		   	
+
 </body>
 </html>
