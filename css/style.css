@@ -437,7 +437,7 @@ display: block;
 	position: fixed;
 	bottom: 29px;
 	right: 3%;
-	overflow: hidden;
+//	overflow: hidden;
 	width:38px;
 	height:25px;
 	border: none;
@@ -448,7 +448,7 @@ display: block;
 	width:38px;
 	height:25px;
 	display: block;
-	overflow: hidden;
+//	overflow: hidden;
 	float: right;
 	opacity: 0;
 	-moz-opacity: 0;
@@ -616,7 +616,7 @@ display: block;
 	}
 	.tittle-head p {
 	font-size: 1em;
-	overflow: hidden;
+//	overflow: hidden;
 	height: 49px;
 	}
 	.tittle-head h1 {
@@ -659,7 +659,7 @@ display: block;
 	}
 	.tittle-head p {
 	font-size: 15px;
-	overflow: hidden;
+//	overflow: hidden;
 	height: 47px;
 	width: 96%;
 	}
